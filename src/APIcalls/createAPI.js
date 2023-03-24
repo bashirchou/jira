@@ -1,4 +1,4 @@
-import axios from "axios";
+const axios = require("axios");
   export const createAccountAPI = async (email, password) => {
     try {
       const response = await axios.post("http://localhost:8000/create/" + email + "/" + password); 
